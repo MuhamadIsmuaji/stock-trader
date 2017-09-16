@@ -8,6 +8,10 @@ import store from './store/store'
 
 Vue.use(VueRouter);
 
+Vue.filter('currency', (value) => {
+	return 'Rp. ' + value.toLocaleString();
+})
+
 const router = new VueRouter({
 	mode: 'history',
 	routes,
@@ -19,3 +23,6 @@ new Vue({
   store,
   render: h => h(App)
 })
+
+// ...mapGetters({}) => npm install --save-dev babel-preset-stage-2
+// .babelrc add ["stage-2"] 
