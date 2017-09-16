@@ -3,7 +3,7 @@ import Portofolio from './components/portofolio/Portofolio.vue'
 import Stocks from './components/stocks/Stocks.vue'
 
 export const routes = [
-	{path: '/stock-trader', component: Home},
-	{path: '/stock-trader/portofolio', component: Portofolio},
-	{path: '/stock-trader/stocks', component: Stocks},
+	{path: '/', component: Home},
+	{path: '/portofolio', component: Portofolio},
+	{path: '/stocks', component: Stocks},
 ];
